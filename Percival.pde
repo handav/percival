@@ -14,15 +14,12 @@ AudioSample PianoC3;
 AudioSample PianoEb3;
 AudioSample PianoD3;
 AudioSample PianoG3;
-String typed_text = "";
-int vertical = 25;
-int horizontal = 25;
+
 String[] allText;
 ArrayList<Line> allLines=new ArrayList();
 int wordCounter =0 ;
 int lineCounter = 0;
 boolean over = false;
-
 Line currentLine;
 int iterateThroughLines = 0;
 
@@ -94,9 +91,4 @@ void keyTyped() {
       noLoop();
     }
   }
-  //if (key == ' ') {
-  //  typed_text = typed_text + " ";
-  //}
-  //typed_text = typed_text + str(key);
-  // println("typed " + String(key) + " " + key);
 }
